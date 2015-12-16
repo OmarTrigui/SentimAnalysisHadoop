@@ -13,4 +13,6 @@ $ hadoop jar enis_wcount.jar enis.hadoop.wordcount.WCount -libjars java-json.jar
 $ cat /usr/local/hadoop/logs/*.log | grep ERROR
 ```
 ## Logged STD(IN/OUT/ERR)
+```
 $ dir=/usr/local/hadoop/logs/userlogs/$(ls -t /usr/local/hadoop/logs/userlogs/ | head -n 1) ; cat $dir/* $dir/*/*
+```
